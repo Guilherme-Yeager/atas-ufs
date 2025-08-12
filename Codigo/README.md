@@ -26,8 +26,8 @@
 ### 1. Clonar o Repositório
 
 ```powershell
-git clone https://seu-repositorio.git
-cd nome-da-pasta-do-projeto
+git clone https://github.com/Guilherme-Yeager/atas-ufs.git
+cd Codigo
 ```
 
 ### 2. Criar o Ambiente Virtual

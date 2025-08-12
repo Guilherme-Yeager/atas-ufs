@@ -9,6 +9,7 @@
   ├── static/ # Arquivos estáticos (CSS, JS, imagens...)
       ├── css/
       ├── js/
+  ├── templates/ # Páginas HTML
   ├── app.py # Aplicação Flask
   ├── config.py # Configurações do projeto
   ├── .gitignore # Arquivos e pastas ignorados pelo Git

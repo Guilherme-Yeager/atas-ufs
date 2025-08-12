@@ -10,11 +10,11 @@
       ├── css/
       ├── js/
   ├── app.py # Aplicação Flask
+  ├── config.py # Configurações do projeto
   ├── .gitignore # Arquivos e pastas ignorados pelo Git
   ├── README.md # Documentação do projeto
   └── requirements.txt # Dependências Python do projeto
 ```
-
 
 # Executar a aplicação
 

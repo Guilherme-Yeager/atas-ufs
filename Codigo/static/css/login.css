@@ -1,0 +1,179 @@
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+main {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(255, 255, 255, 0.897);
+}
+
+main > article {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* Lado esquerdo - Imagem */
+main > article > section:first-child {
+  flex: 3;
+  border-right: 1px solid #00539f;
+  background: url('{{ url_for("static", filename="images/sua-imagem.jpg") }}') center center no-repeat;
+
+}
+
+/* Lado direito - Formulário */
+main > article > section:last-child {
+  flex: 1;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main > article > section:last-child header img {
+  width: 110px;
+  margin-bottom: -20px;
+}
+
+main > article > section:last-child header h1 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: #00539f;
+  margin-bottom: 40px;
+}
+
+
+form {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: none;
+}
+
+input[type="email"]{
+  margin-top: 30px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 8px 12px;
+  margin-bottom: 20px;
+  border: 1px solid #0000007e;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s;
+  width: 90%;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #999;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #00539f;
+}
+
+button {
+  background-color: #00539f;
+  border: none;
+  color: white;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 30px auto 80px auto;
+  width: 70%;
+  max-width: 280px;
+}
+
+button:hover {
+  background-color: #003f7d;
+}
+
+
+footer p {
+  font-size: 1.05rem;
+  color: #555;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+footer p > a {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: #00539f;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p a > img {
+    width: 36px; 
+    height: 36px; 
+    vertical-align: middle; 
+    margin-left: 5px;
+}
+
+@media (max-width: 1300px) {
+  body, html {
+    height: 100%;
+  }
+
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  main > article {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main > article > section:first-child {
+    display: none;
+  }
+
+  main > article > section:last-child {
+    flex: none;
+    width: 100%;
+    max-width: 420px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  button {
+    max-width: 100%;
+  }
+}

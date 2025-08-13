@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AtasUfs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" />
+</head>
+<body>
+    <main>
+        <article aria-label="Login AtasUfs">
+            <section aria-label="">
+               
+            </section>
+            <section aria-label="Formulário de login">
+                <header>
+                    <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo UFS" />
+                    <h1>AtasUfs</h1>
+                </header>
+                <form action="" method="POST">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="E-mail" />
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required placeholder="Senha" />
+                    <button type="submit">Entrar</button>
+                </form>
+                <footer>
+                    <p>Não possui conta? Clique 
+                        <a href="">
+                            aqui 
+                            <img src="{{ url_for('static', filename='images/email.png') }}" alt="Ícone de email" />
+                        </a>
+                    </p>
+                </footer>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
